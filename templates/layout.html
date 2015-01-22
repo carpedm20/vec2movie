@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+start : 2015-01-22 17:23
+                               _           ____   ___
+  ___ __ _ _ __ _ __   ___  __| |_ __ ___ |___ \ / _ \
+ / __/ _` | '__| '_ \ / _ \/ _` | '_ ` _ \  __) | | | |
+| (__ (_| | |  | |_) |  __/ (_| | | | | | |/ __/| |_| |
+ \___\__,_|_|  | .__/ \___|\__,_|_| |_| |_|_____|\___/
+               |_|
+
+end  : 2015-??-??
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="vec2movie,carpedm20,movie,word2vec" >
+  <meta name="description" content="History of box office" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:title" content="Vec2movie" />
+  <meta property="og:url" content="http://pail.unist.ac.kr/carpedm20/vec/"/>
+  <meta property="og:image" content="https://raw.githubusercontent.com/carpedm20/foxoffice/master/static/logo.png" />
+  <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+  <title>Vec2movie</title>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="http://cdn.smtcs.rocks/md/md.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body class="yir-generic">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=776839839027483&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+    <nav class="nav-bar">
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a href="http://carpedm20.github.io/" class="brand-logo">carpedm20</a>
+          <ul class="side-nav">
+            <!--<li style="margin-right: 15px;"> Search : </li>
+            <li>
+              <input id="icon_prefix" type="text" class="validate">
+            </li>-->
+            <li><a href="pail.unist.ac.kr/carpedm20/fox/">VoxOffice</a></li>
+            <li><a href="http://pail.unist.ac.kr:8080/">ReviewDuk</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="section">
+        <h1 class="header center indigo-text logo-text">Vec2movie</h1>
+        <div class="row center text">
+          <p class="col s12 light">Search movie with words not by foolish algorithms.<br/>"Which movies are about First Love to fall for?"</p>
+        </div>
+        <div class="row center">
+          <p class="footnote">Algorithms inspired by <a class="indigo-text" href="http://insightdatascience.com/blog/thisplusthat_a_search_engine_that_lets_you_add_words_as_vectors.html">ThisPlusThat</a></p>
+          <p class="red-text accent-1">* View on Desktop, not on Mobile *</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="section">
+        <h2 class="header center orange-text">How to read?</h2>
+        <br/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="base" class="col s2">
+        <div id="sticker">
+        {% block sticker %}{% endblock %}
+        </div>
+      </div>
+      <div class="col s10">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+    <footer class="blue-grey" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s9">
+            <h5 class="white-text">About me</h5>
+            <div class="row">
+              <a href="http://carpedm20.github.io">
+                <div class="col s3 center">
+                  <!--<img class="z-depth-3" src="http://pail.unist.ac.kr:8080/static/img/TaehoonKim.jpg">-->
+                  <img class="z-depth-3" src="https://avatars3.githubusercontent.com/u/3346407" style="width: 80%; margin-top: 10px;">
+                </div>
+              </a>
+              <div class="col s9">
+                <div class="about-me">
+                  <p class="grey-text text-lighten-4">드라마 '유령'을 보고 해킹에 빠진 컴덕. 단순히 해커의 언어라는 이유로 파이썬을 시작했고 그렇게 파이썬이라는 나라가 허락한 유일한 마약에 빠져 파이뽕에 취해있다. 취미는 역시 해킹. 가끔 파이썬 라이브러리를 만들거나 영화를 감상한다. </p>
+                  <a href="http://carpedm20.github.io" target="_blank" class="waves-effect waves-light green btn">Portfolio</a>
+                  <a href="http://github.com/carpedm20" target="_blank" class="waves-effect waves-light cyan btn">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact col s3">
+            <h5 class="white-text">Contact</h5>
+            <label class="white-text">carpedm20@gmail.com</label>
+            <ul>
+              <li><a class="white-text" href="http://twitter.com/carpedm20" target="_blank">Twitter</a></li>
+              <li><a class="white-text" href="http://facebook.com/carpedm20" target="_blank">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Created by <a class="orange-text lighten-3" href="http://carpedm20.github.io/">carpedm20</a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="http://stickyjs.com/jquery.sticky.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script type="text/javascript" src="http://cdn.smtcs.rocks/md/md.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

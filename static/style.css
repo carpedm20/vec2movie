@@ -1,0 +1,243 @@
+body {
+  font-family: Ubuntu,sans-serif;
+  min-width: 970px;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.toast {
+  font-size: 0.9em;
+  background: rgba(20,24,28,.95);
+}
+
+
+.foxoffice, .people {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.grey li a {
+  color: white;
+}
+
+.logo-text {
+  font-size: 7rem;
+}
+
+nav .brand-logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+ul.side-nav li a {
+  font-size: 1.2em;
+}
+
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.x.axis g text {
+  fill: white;
+}
+
+.x.axis line {
+  stroke: white;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: white;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.yir-generic {
+  position: relative;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  color: #9ab;
+}
+
+.nav-bar {
+  background: rgba(65,91,118,.95);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.text p {
+  font-family: Vollkorn, Georgia,serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.footnote {
+  font-family: Ubuntu,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 100px;
+}
+
+.footnote a {
+  color: #def;
+}
+
+label {
+  font-size: 1.0rem;
+}
+
+.shadow {
+  width: 25px;
+  height: 25px;
+  margin: 20px auto;
+}
+
+a.genre {
+  height: 32px;
+  font-size: 0.5rem;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 2px;
+}
+
+.materialboxed  {
+  width: 100%;
+}
+
+div.about-me {
+  padding-left: 10px;
+}
+
+div.contact {
+  padding-left: 30px;
+}
+
+div.footer-copyright {
+  text-align: right;
+}
+
+div.insight-container {
+  width: 90%;
+}
+
+div.info-card {
+  min-height: 235px;
+}
+
+.ubuntu {
+  font-family: Ubuntu,sans-serif;
+}
+
+.strip-overlay {
+  background: rgba(68,85,102,.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.year-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.year-poster-img {
+  height:100%;
+}
+
+.year-poster-content {
+  width: 90%;
+  padding-top: 10%;
+  box-sizing: border-box;
+  height: 100%;
+  font-weight: 400;
+  position: relative;
+}
+
+.year-poster-text {
+  width: 60%;
+  float: right;
+  text-align: right;
+}
+
+.year-poster-text h2 a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 95px;
+  line-height: 1em;
+}
+
+.year-poster-content h1 span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  display: inline-block;
+  background-color: rgba(0,0,0,.3);
+  border: 1px solid rgba(255,255,255,.6);
+  color: #fff;
+  padding: 5px 8px 6px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+  box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.card a {
+  margin-right: 0px;
+}
+
+.img-block-strip {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.loading {
+  margin-top: 240px;
+  margin-bottom: 240px;
+}
+
+.no-bottom {
+  margin-bottom: 0px;
+}
